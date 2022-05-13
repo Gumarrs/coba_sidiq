@@ -1,0 +1,210 @@
+<!doctype html>
+
+<head>
+  <meta charset=“utf-8”>
+  <meta name=“author” content=“Agus Marsadualan”>
+  <meta name=“description” content=“Tugas 1”>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reponsive.css">
+
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <div class="header-left">
+        <a href="index.html"><img class="logo" src="image/agus.png"></a>
+      </div>
+      <span class="fa fa-bars menu-icon"></span>
+      <div class="header-right">
+        <a href="#home">Home</a>
+        <a href="#profil">Profile</a>
+        <a href="#about">About</a>
+        <a href="#calculator">calculator</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+  <div class="top-wrapper">
+    <section id="home">
+      <div class="container">
+        <h1 id="head">TUGAS 1</h1>
+        <h2>Pemrograman Web</h2>
+        <p>Ini adalah tugas dari mata kuliah pemrogaman web</p>
+        <p>Saya membuat website sederhana</p>
+        <div class="btn-wrapper">
+          <a href="#profil" class="btn0 start">Get Started</a>
+        </div>
+      </div>
+  </div>
+  </section>
+  <section id="profil">
+    <div class="profile-wrapper">
+      <div class="container">
+        <div class="heading">
+          <h2>Biodata Saya</h2>
+        </div>
+        <div class="profile">
+          <div class="profile-icon">
+            <img src="image/profil.jpg">
+          </div>
+          <p class="txt-contents"> Nama : Agus Marsadualan <br>
+            NIM : 191077004
+          </p>
+        </div>
+        <p class="txt-contents">Saya berasal dari Cilacap, Jawa Tengah. Saat ini saya kuliah di Institut Sains dan
+          Teknologi Akprind Yogyakarta jurusan Rekayas Sistem Komputer Angkatan 2019.</p>
+        <div class="clear"></div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section id="about">
+    <div class="about">
+      <div class="container">
+        <div class="heading">
+          <h3>RIWAYAT PENDIDIKAN</h3>
+          <table border="2" align="center">
+            <tr>
+              <td>No</td>
+              <td>Tingkat</td>
+              <td>Nama Sekolah</td>
+              <td>Tahun Lulus</td>
+              <td>Tahun Keluar</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>SD</td>
+              <td>SD Negeri Cilempuyang 01</td>
+              <td>2007</td>
+              <td>2013</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>SMP</td>
+              <td>SMP Negeri 1 Cimanggu</td>
+              <td>2013</td>
+              <td>2016</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>SMK</td>
+              <td>SMK Muhammadiyah Majenang</td>
+              <td>2016</td>
+              <td>2019</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Sarjana</td>
+              <td>Institut Sains dan Teknologi Akprind Yogyakarta</td>
+              <td>2019</td>
+              <td>Present</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="calculator">
+    <div class="calculat">
+      <div id="main">
+        <form>
+          <input type="text" id="viewer" />
+
+          <table align="center">
+            <tr>
+              <td>
+                <input type="button" value="C" class="btn" onclick="clean()" />
+              </td>
+              <td>
+                <input type="button" value="DEL" class="btn" onclick="backspace()" />
+              </td>
+              <td>
+                <input type="button" value="/" class="btn" onclick="view('/')" />
+              </td>
+              <td>
+                <input type="button" value="X" class="btn" onclick="view('*')" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="button" value="7" class="btn" onclick="view(7)" />
+              </td>
+              <td>
+                <input type="button" value="8" class="btn" onclick="view(8)" />
+              </td>
+              <td>
+                <input type="button" value="9" class="btn" onclick="view(9)" />
+              </td>
+              <td>
+                <input type="button" value="-" class="btn" onclick="view('-')" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="button" value="4" class="btn" onclick="view(4)" />
+              </td>
+              <td>
+                <input type="button" value="5" class="btn" onclick="view(5)" />
+              </td>
+              <td>
+                <input type="button" value="6" class="btn" onclick="view(6)" />
+              </td>
+              <td>
+                <input type="button" value="+" class="btn" onclick="view('+')" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="button" value="1" class="btn" onclick="view(1)" />
+              </td>
+              <td>
+                <input type="button" value="2" class="btn" onclick="view(2)" />
+              </td>
+              <td>
+                <input type="button" value="3" class="btn" onclick="view(3)" />
+              </td>
+              <td rowspan="2">
+                <input type="button" value="=" class="btn" onclick="equal()" style="height: 12.4em;" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="button" value="0" class="btn" onclick="view('0')" />
+              </td>
+              <td>
+                <input type="button" value="000" class="btn" onclick="view('000')" />
+              </td>
+              <td>
+                <input type="button" value="." class="btn" onclick="view('.')" />
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </div>
+
+  </section>
+  <section id="contact">
+    <div class="contact">
+      <div class="container">
+        <ul>
+          <li>Wa : 0889698501592</li>
+          <li>Fb : <a href="https://web.facebook.com/agus.marsadualan.3/">Agus Marsadualan</a> </li>
+          <li>Ig : <a href="https://www.instagram.com/gumarrs_/">@Gumarrs_</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <script>document.write("<center>Copyright By Agus</center>")</script>
+    </div>
+
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

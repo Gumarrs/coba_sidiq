@@ -1,0 +1,85 @@
+<!doctype html>
+
+<head>
+    <meta charset=“utf-8”>
+    <meta name=“author” content=“Agus Marsadualan”>
+    <meta name=“description” content=“Tugas 1”>
+    <title>Halaman PIntu</title>
+    <script type="text/javascript">
+        window.setTimeout("waktu()", 1000);
+        function waktu() {
+            var tanggal = new Date();
+            setTimeout("waktu()", 1000);
+            document.getElementById("jam").innerHTML = tanggal.getHours() + ":" + tanggal.getMinutes() + ":" + tanggal.getSeconds();
+        }
+        var tanggallengkap = new String();
+        var namahari = ("Minggu Senin Selasa Rabu Kamis Jumat Sabtu");
+        namahari = namahari.split(" ");
+        var namabulan = ("Januari Februari Maret April Mei Juni Juli Agustus September Oktober November Desember");
+        namabulan = namabulan.split(" ");
+        var tgl = new Date();
+        var hari = tgl.getDay();
+        var tanggal = tgl.getDate();
+        var bulan = tgl.getMonth();
+        var tahun = tgl.getFullYear();
+        tanggallengkap = namahari[hari] + ", " + tanggal + " " + namabulan[bulan] + " " + tahun;
+    </script>
+    <style>
+        body {
+            background-image: url('image/1.jpg');
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            width: 1170px;
+            padding: 0 15px;
+            margin: 150px auto;
+        }
+
+        .content {
+            color: aliceblue;
+        }
+
+        .jam {
+            font-size: 150px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        button {
+            padding: 5px 30px;
+            background-color: yellow;
+            opacity: 0.8;
+            border: none;
+            text-align: center;
+        }
+
+        button:hover {
+            opacity: 3;
+        }
+
+        a {
+            font-family: cursive color: black;
+            text-decoration: none;
+            padding: 5px auto;
+            font-size: 20px;
+            color: GREEN;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="jam" id="jam"></div>
+            <script language='JavaScript'>document.write(tanggallengkap);</script>
+            <h2>TUGAS 1 AGUS MARSADUALAN</h2>
+            <button onclick="alert('Anda akan menuju halaman rumah dari tugas 1, klik OK')">
+                <a href="halaman-utama.html">MASUK</a>
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>
